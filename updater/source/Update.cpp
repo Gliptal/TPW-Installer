@@ -34,22 +34,27 @@ int main(int argc, char** argv)
 
   int totalEdits = reader::readInteger(streams::changesFile);
 
-  for (int i = 1; i <= totalEdits; i += 1)
-    {
-    char mode;
-    string newData;
-    char offset = ' ';
-    string oldData;
-
-    setStreams(i, totalEdits);
-
-    getEdit(mode, newData, offset, oldData);
-
-    int lineNumber = reachEdit(oldData);
-    makeEdit(mode, offset, newData, lineNumber);
+  if (totalEdits == 0)
     reachEnd();
+  else
+    {
+    for (int i = 1; i <= totalEdits; i += 1)
+      {
+      char mode;
+      string newData;
+      char offset = ' ';
+      string oldData;
 
-    streams::closeTemp();
+      setStreams(i, totalEdits);
+
+      getEdit(mode, newData, offset, oldData);
+
+      int lineNumber = reachEdit(oldData);
+      makeEdit(mode, offset, newData, lineNumber);
+      reachEnd();
+
+      streams::closeTemp();
+      }
     }
 
   streams::closeAll();

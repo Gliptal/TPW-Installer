@@ -10,11 +10,21 @@ This small set of files act as a lightweight installer for the TPW MODS package.
 Changelog
 ======
 
+[2.0.1]
+
+- [install.exe]
+  - suppressed a useless warning
+
+
+- [update.exe]
+  - corrected no edits case bug
+
 [2.0.0]
 
 - [install.exe]
   - moved to .exe format
   - tweakings and enhancements
+
 
 - [update.exe]
   - first working release
@@ -85,6 +95,8 @@ Progress
 25/07/14 | [1.0.0](https://github.com/Gliptal/TPW-Installer/tree/1.0.0) | first working release
 
 05/08/14 | [2.0.0](https://github.com/Gliptal/TPW-Installer/tree/2.0.0) | update.exe added, various enhancements
+
+05/08/14 | [2.0.1](https://github.com/Gliptal/TPW-Installer/tree/2.0.1) | bug fixing
 
 Links
 ======

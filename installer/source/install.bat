@@ -90,7 +90,7 @@ if not exist "%ArmaPath%\userconfig\TPW_MODS\TPW_MODS.hpp" (
   del "*.hpp" /q
   del "*.PRST" /q 2>nul
   del "*.PRSTNEW" /q 2>nul
-  del "temp*.txt" /q
+  del "temp*.txt" /q 2>nul
 )
 
 echo SUCCESS
