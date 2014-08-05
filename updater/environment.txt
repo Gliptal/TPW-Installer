@@ -1,0 +1,8 @@
+//TEST FOLDER
+cd SkyDrive\Documenti\Coding\"TPW Installer"\updater\testing
+
+//BUILD FOLDER
+cd ..\..\Users\Utente\SkyDrive\Documenti\Coding\"TPW Installer"\updater\source
+
+//COMPILE
+cl /EHsc /Ox /Fe..\testing\update.exe Update.cpp errors.cpp streams.cpp reader.cpp writer.cpp copier.cpp

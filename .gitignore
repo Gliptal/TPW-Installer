@@ -1,2 +1,2 @@
-./ignored
-./executable/REVERT
+temp*.txt
+*.obj

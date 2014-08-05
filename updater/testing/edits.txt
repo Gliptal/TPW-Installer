@@ -1,0 +1,18 @@
+4
+
+add
+ADD TEST AFTER
+after
+tpw_air_exclude
+
+add
+ADD TEST BEFORE
+before
+tpw_animal_minradius
+
+remove
+tpw_boat_radius
+
+change
+tpw_car_waypoints
+CHANGE TEST
